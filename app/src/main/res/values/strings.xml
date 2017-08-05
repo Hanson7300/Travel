@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Travel Guide</string>
+    <string name="pingyao">平遥</string>
+    <string name="datong">大同</string>
+    <string name="taiyuan">太原</string>
+    <string name="wutai_mountain">五台山</string>
+    <string name="hukou">壶口</string>
+
+</resources>

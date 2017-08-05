@@ -1,0 +1,12 @@
+<!-- Android provided Adapter requires view similar to
+    android.R.layout.simple_list_item_1(TextView)-->
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/place_name"
+    android:layout_width="match_parent"
+    android:layout_height="90dp"
+    android:gravity="center_vertical"
+    android:paddingLeft="16dp"
+    android:textSize="24sp"
+    tools:text="平遥" />
+
