@@ -15,26 +15,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".Pingyao"
-            android:label="@string/pingyao"
-            android:parentActivityName=".MainActivity" />
-        <activity
-            android:name=".Wutai_Mountain"
-            android:label="@string/wutai_mountain"
-            android:parentActivityName=".MainActivity" />
-        <activity
-            android:name=".Taiyuan"
-            android:label="@string/taiyuan"
-            android:parentActivityName=".MainActivity" />
-        <activity
-            android:name=".Datong"
-            android:label="@string/datong"
-            android:parentActivityName=".MainActivity" />
-        <activity
-            android:name=".Hukou"
-            android:label="@string/hukou"
-            android:parentActivityName=".MainActivity" />
+        <activity android:name=".Place_attractions"
+            android:parentActivityName=".MainActivity"></activity>
     </application>
 
 </manifest>

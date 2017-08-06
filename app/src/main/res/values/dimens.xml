@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="min_list_item_height">90dp</dimen>
+    <dimen name="margin_left">6dp</dimen>
+    <dimen name="margin_right">6dp</dimen>
+    <dimen name="title_text_size">24sp</dimen>
+    <dimen name="introduction_text_size">16sp</dimen>
+    <dimen name="image_padding">2dp</dimen>
+</resources>

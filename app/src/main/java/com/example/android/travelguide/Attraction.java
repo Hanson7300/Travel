@@ -1,13 +1,14 @@
 package com.example.android.travelguide;
 
+import java.io.Serializable;
 /**
  * Created by Hansson on 2017/8/5.
  */
 
-public class Attraction  {
-    private String mTitle;
-    private String mIntroduction;
-    private int mImageResourceId;
+public class Attraction implements Serializable {
+    public String mTitle;
+    public String mIntroduction;
+    public int mImageResourceId;
 
     public Attraction(String title, String introduction, int imageResourceId) {
         this.mTitle = title;
