@@ -26,22 +26,27 @@ public class AttractionAdapter extends ArrayAdapter<Attraction> {
     @Override
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
 
-        View listItemView = convertView;
-        if(listItemView==null) {
-        listItemView= LayoutInflater.from(getContext()).inflate(R.layout.attractions,parent,false);
+        ViewHolder holder;
+        if (convertView == null) {
+            convertView = LayoutInflater.from(getContext()).inflate(R.layout.attractions,parent,false);
+            holder = new ViewHolder();
+            holder.imageView = (ImageView) convertView.findViewById(R.id.imageView);
+            holder.place_name = (TextView) convertView.findViewById(R.id.place_name_text_view);
+            holder.introduction = (TextView) convertView.findViewById(R.id.introduction_text_view);
+            convertView.setTag(holder);
         }
-
+        else{
+            holder = (ViewHolder)convertView.getTag();
+        }
         Attraction currentAttration = getItem(position);
-
-        TextView place_name = (TextView)listItemView.findViewById(R.id.place_name_text_view);
-        place_name.setText(currentAttration.getTitle());
-
-        TextView introduction =(TextView)listItemView.findViewById(R.id.introduction_text_view);
-        introduction.setText(currentAttration.getIntroduction());
-
-        ImageView image = (ImageView)listItemView.findViewById(R.id.imageView);
-        image.setImageResource(currentAttration.getImageResourceId());
-
-        return listItemView;
+        holder.imageView.setImageResource(currentAttration.getImageResourceId());
+        holder.place_name.setText(currentAttration.getTitle());
+        holder.introduction.setText(currentAttration.getIntroduction());
+        return convertView;
+    }
+    static class ViewHolder {
+        TextView place_name;
+        TextView introduction;
+        ImageView imageView;
     }
 }
